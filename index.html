@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>KC</title>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script href="main.js"></script>
+  <script>
+let contract;
+window.addEventListener('load', () => {
+      if(typeof(web3) === 'undefined') {
+        return console.log("Metamask is not installed.");
+      }
+      contract = web3.eth.contract(abi).at(contract_address);
+});
+</script>
+   <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+    <div id="app">
+          
+      <div id = "circ">
+        <p id= "info">Circulating KxC:</p>
+        </hr>
+        <span id="totalSupply">-</span>
+      </div>
+      <div id = "your">
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
